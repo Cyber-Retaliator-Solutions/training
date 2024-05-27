@@ -1,4 +1,3 @@
-cat <<EOT >> docs/styles/main.css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,11 +7,12 @@ body {
 }
 .sidebar-left {
     width: 20%;
-    background: #1f70c1;
+    background: #002244; /* Dark blue */
     padding: 20px;
     color: white;
     height: 100vh;
     position: fixed;
+    box-sizing: border-box;
 }
 .sidebar-left ul {
     list-style: none;
@@ -34,9 +34,10 @@ body {
     width: 60%;
     padding: 20px;
     background: white;
+    box-sizing: border-box;
 }
 .content h2 {
-    border-bottom: 2px solid #1f70c1;
+    border-bottom: 2px solid #00aaff; /* Light blue */
     padding-bottom: 10px;
 }
 .roadmap-table {
@@ -51,7 +52,7 @@ body {
     border-bottom: 1px solid #ddd;
 }
 .roadmap-table th {
-    background-color: #1f70c1;
+    background-color: #00aaff; /* Light blue */
     color: white;
 }
 .roadmap-table tr:nth-of-type(even) {
@@ -69,18 +70,18 @@ body {
     height: 100vh;
     overflow-y: auto;
     border-left: 1px solid #ddd;
+    box-sizing: border-box;
 }
 .course-details {
     margin-bottom: 20px;
 }
 .course-details h3 {
-    color: #1f70c1;
+    color: #002244; /* Dark blue */
 }
 .badge-link {
-    color: #1f70c1;
+    color: #002244; /* Dark blue */
     text-decoration: none;
 }
 .badge-link:hover {
     text-decoration: underline;
 }
-EOT
