@@ -1,0 +1,86 @@
+cat <<EOT >> docs/styles/main.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+}
+.sidebar-left {
+    width: 20%;
+    background: #1f70c1;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar-left ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar-left ul li {
+    margin: 20px 0;
+}
+.sidebar-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.sidebar-left ul li a:hover {
+    text-decoration: underline;
+}
+.content {
+    margin-left: 20%;
+    width: 60%;
+    padding: 20px;
+    background: white;
+}
+.content h2 {
+    border-bottom: 2px solid #1f70c1;
+    padding-bottom: 10px;
+}
+.roadmap-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+.roadmap-table th, .roadmap-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.roadmap-table th {
+    background-color: #1f70c1;
+    color: white;
+}
+.roadmap-table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.roadmap-table tr:hover {
+    background-color: #f1f1f1;
+}
+.sidebar-right {
+    width: 20%;
+    background: #f4f4f9;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+}
+.course-details {
+    margin-bottom: 20px;
+}
+.course-details h3 {
+    color: #1f70c1;
+}
+.badge-link {
+    color: #1f70c1;
+    text-decoration: none;
+}
+.badge-link:hover {
+    text-decoration: underline;
+}
+EOT
