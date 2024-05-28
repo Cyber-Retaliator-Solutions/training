@@ -4,6 +4,8 @@ body {
     padding: 0;
     display: flex;
     background-color: #f4f4f9;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .sidebar-left {
@@ -41,6 +43,13 @@ body {
     padding: 20px;
     background: white;
     box-sizing: border-box;
+    flex: 1;
+}
+
+.content h1, .content h2 {
+    font-size: 36px;
+    color: #002244;
+    margin-bottom: 20px;
 }
 
 .content h2 {
@@ -87,4 +96,16 @@ body {
 
 .course-details h3 {
     color: #002244;
+}
+
+.footer {
+    background: #002244;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
 }
