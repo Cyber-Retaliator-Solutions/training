@@ -5,6 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Retaliator Solutions Training</title>
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+        body {
+            font-family: 'IBM Plex Sans', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        h1, h2, h3 {
+            color: #0f62fe;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .badge-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .badge-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .badge-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .badge-item img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        .badge-item a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+        .badge-item a:hover {
+            background-color: #f4f4f4;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .sidebar-left, .sidebar-right {
+            width: 20%;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            width: 60%;
+            padding: 10px;
+        }
+        .sidebar-left ul, .sidebar-right ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar-left ul li, .sidebar-right ul li {
+            margin: 10px 0;
+        }
+        .sidebar-left ul li a, .sidebar-right ul li a {
+            text-decoration: none;
+            color: #0f62fe;
+        }
+        .sidebar-left ul li a:hover, .sidebar-right ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar-left">
@@ -12,6 +107,7 @@
         <ul>
             <li><a href="safer-payments.html">IBM Safer Payments</a></li>
             <li><a href="lab-requirements-ficon.html">Lab Requirements</a></li>
+            <li><a href="integrations-roadmap.html">Integrations Roadmap</a></li>
         </ul>
     </div>
     <div class="content">
