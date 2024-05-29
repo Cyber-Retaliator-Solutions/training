@@ -16,55 +16,6 @@ html, body {
     min-height: 100vh;
 }
 
-.navbar {
-    background-color: #333;
-    padding: 1rem;
-    position: relative;
-}
-
-.navbar .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.navbar .menu-toggle .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.navbar ul li {
-    margin: 0 1rem;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.main-content {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0; /* Adjusted padding to start content at the top */
-}
-
-.sidebar {
-    width: 20%;
-    background-color: #f4f4f4;
-    padding: 1rem;
-    position: fixed;
-    top: 5rem; /* Adjust according to the height of the navbar */
-    height: calc(100vh - 5rem);
-    overflow: auto;
-}
 
 .left-sidebar {
     left: 0;
