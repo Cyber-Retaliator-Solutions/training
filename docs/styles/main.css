@@ -22,7 +22,6 @@ html, body {
     padding: 2rem 0; /* Adjusted padding to start content at the top */
 }
 
-
 .sidebar {
     width: 20%;
     background-color: #f4f4f4;
@@ -32,9 +31,11 @@ html, body {
     height: 100%;
     overflow: auto;
 }
+
 .left-sidebar {
     left: 0;
     background: #002244;
+    color: white; /* Ensure text is white */
 }
 
 .right-sidebar {
@@ -74,7 +75,7 @@ html, body {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #333;
+    color: inherit; /* Ensure text is white for the left sidebar */
     font-weight: bold;
 }
 
