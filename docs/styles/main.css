@@ -34,6 +34,7 @@ html, body {
 }
 .left-sidebar {
     left: 0;
+    background: #002244;
 }
 
 .right-sidebar {
