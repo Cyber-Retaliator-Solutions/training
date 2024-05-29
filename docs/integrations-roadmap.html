@@ -26,6 +26,34 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: left;
         }
+        .sidebar-left {
+    width: 20%;
+    background: #002244;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    box-sizing: border-box;
+}
+
+.sidebar-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-left ul li {
+    margin: 20px 0;
+}
+
+.sidebar-left ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-left ul li a:hover {
+    text-decoration: underline;
+}
         h1, h2, h3 {
             color: #0f62fe;
         }
@@ -67,7 +95,21 @@
         }
         .badge-item a:hover {
             background-color: #f4f4f4;
+            
         }
+
+        .sidebar-right {
+    width: 20%;
+    background: #f4f4f9;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
         .footer {
             text-align: center;
             padding: 10px;
