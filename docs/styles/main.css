@@ -28,7 +28,7 @@ html, body {
     background-color: #f4f4f4;
     padding: 1rem;
     position: fixed;
-    top: 5rem; /* Adjust according to the height of the navbar */
+    top: 0; /* Adjust according to the height of the navbar */
     height: calc(100vh - 5rem);
     overflow: auto;
 }
