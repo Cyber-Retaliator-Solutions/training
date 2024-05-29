@@ -6,132 +6,82 @@
     <title>Cyber Retaliator Solutions Training</title>
     <link rel="stylesheet" href="styles/main.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
-
-        body {
-            font-family: 'IBM Plex Sans', Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-        }
-        .container {
-            display: flex;
-            width: 100%;
-            max-width: 1200px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 20px;
-        }
-        .sidebar-left, .sidebar-right {
-            width: 20%;
-            background: #002244;
-            color: white;
-            padding: 20px;
-            height: 100vh;
-            overflow-y: auto;
-            box-sizing: border-box;
-        }
-        .sidebar-right {
-            background: #f4f4f9;
-            color: black;
-        }
-        .content {
-            width: 60%;
-            padding: 20px;
-            background: white;
-            box-sizing: border-box;
-        }
-        h1, h2, h3 {
-            color: #0f62fe;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            width: 100%;
-            position: relative;
-            bottom: 0;
-        }
-        .sidebar-left ul, .sidebar-right ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .sidebar-left ul li, .sidebar-right ul li {
-            margin: 10px 0;
-        }
-        .sidebar-left ul li a, .sidebar-right ul li a {
-            text-decoration: none;
-            color: white;
-        }
-        .sidebar-left ul li a:hover, .sidebar-right ul li a:hover {
-            text-decoration: underline;
-        }
-        .sidebar-right ul li a {
-            color: #0f62fe;
-        }
+      
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar-left">
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="safer-payments.html">IBM Safer Payments</a></li>
-                <li><a href="lab-requirements-ficon.html">Lab Requirements</a></li>
-                <li><a href="integrations-roadmap.html">Integrations Roadmap</a></li>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+        </nav>
+        <div class="main-content">
+            <aside class="sidebar left-sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="safer-payments.html">IBM Safer Payments</a></li>
+                    <li><a href="lab-requirements-ficon.html">Lab Requirements</a></li>
+                    <li><a href="integrations-roadmap.html">Integrations Roadmap</a></li>
+                </ul>
+            </aside>
+            <div class="content">
+                <h1>Welcome to Cyber Retaliator Solutions Training</h1>
+                <p>Select a training module from the navigation menu to get started.</p>
+            </div>
+            <aside class="sidebar right-sidebar">
+                <h2>Additional Resources</h2>
+                <ul>
+                    <li>
+                        <div class="course-details">
+                            <h3>IBM z/OS Bootcamp</h3>
+                            <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-zos-bootcamp-ESZ0G">View Course</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-details">
+                            <h3>Fundamental System Skills in z/OS</h3>
+                            <p><a class="badge-link" href="https://www.ibm.com/training/course/fundamental-system-skills-in-zos-ES10G">View Course</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-details">
+                            <h3>IBM System z HMC Operations</h3>
+                            <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-system-z-hardware-management-console-hmc-operations-ES24G">View Course</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-details">
+                            <h3>HCD for z/OS</h3>
+                            <p><a class="badge-link" href="https://www.ibm.com/training/course/hardware-configuration-and-definition-hcd-for-z-os-ES96G">View Course</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-details">
+                            <h3>Introduction to Storage</h3>
+                            <p><a class="badge-link" href="https://www.ibm.com/training/course/introduction-to-storage-SS01G">View Course</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
         </div>
-        <div class="content">
-            <h1>Welcome to Cyber Retaliator Solutions Training</h1>
-            <p>Select a training module from the navigation menu to get started.</p>
-        </div>
-        <div class="sidebar-right">
-            <h2>Additional Resources</h2>
-            <ul>
-                <li>
-                    <div class="course-details">
-                        <h3>IBM z/OS Bootcamp</h3>
-                        <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-zos-bootcamp-ESZ0G">View Course</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="course-details">
-                        <h3>Fundamental System Skills in z/OS</h3>
-                        <p><a class="badge-link" href="https://www.ibm.com/training/course/fundamental-system-skills-in-zos-ES10G">View Course</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="course-details">
-                        <h3>IBM System z HMC Operations</h3>
-                        <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-system-z-hardware-management-console-hmc-operations-ES24G">View Course</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="course-details">
-                        <h3>HCD for z/OS</h3>
-                        <p><a class="badge-link" href="https://www.ibm.com/training/course/hardware-configuration-and-definition-hcd-for-z-os-ES96G">View Course</a></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="course-details">
-                        <h3>Introduction to Storage</h3>
-                        <p><a class="badge-link" href="https://www.ibm.com/training/course/introduction-to-storage-SS01G">View Course</a></p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <footer class="footer">
+            <h2>Contact</h2>
+            <p>Raydo Matthee</p>
+            <p>Solutions Architect, Skunkworks (Pty) Ltd</p>
+            <p><a href="mailto:raydo@skunkworks.africa">raydo@skunkworks.africa</a></p>
+            <p>+27 83 380 7950</p>
+        </footer>
     </div>
-    <div class="footer">
-        <h2>Contact</h2>
-        <p>Raydo Matthee</p>
-        <p>Solutions Architect, Skunkworks (Pty) Ltd</p>
-        <p><a href="mailto:raydo@skunkworks.africa">raydo@skunkworks.africa</a></p>
-        <p>+27 83 380 7950</p>
-    </div>
+    <script src="js/script.js"></script>
+</body>
 </body>
 </html>
