@@ -71,6 +71,13 @@
                 <section class="bx--section">
                     <h2 class="bx--type-expressive-heading-03">We Deliver Throughout The Globe</h2>
                 </section>
+                
+                <button id="mobile-menu">Toggle Menu</button>
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </main>
             <aside class="bx--col-lg-3 bx--col-md-4 bx--col-sm-12 bx--sidebar bx--sidebar--right">
                 <h2 class="bx--type-semibold">Additional Resources</h2>
@@ -122,5 +129,20 @@
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script>
+    import { black, blue, warmGray } from '@carbon/colors';
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        menuToggle.addEventListener("click", function() {
+            navList.classList.toggle("active");
+        });
+
+        console.log(black); // #000000
+        console.log(blue[50]); // #edf4ff
+    });
+    </script>
 </body>
 </html>
