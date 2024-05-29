@@ -7,59 +7,46 @@
     <link rel="stylesheet" href="styles/main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
         body {
             font-family: 'IBM Plex Sans', Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
-            flex-direction: column;
         }
         .container {
             display: flex;
             width: 100%;
             max-width: 1200px;
             background-color: #fff;
-            padding: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            flex-grow: 1;
+            margin: 20px;
         }
         .sidebar-left, .sidebar-right {
             width: 20%;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            margin: 10px;
+            background: #002244;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        .sidebar-right {
+            background: #f4f4f9;
+            color: black;
         }
         .content {
             width: 60%;
-            padding: 10px;
-            margin: 10px;
+            padding: 20px;
+            background: white;
+            box-sizing: border-box;
         }
         h1, h2, h3 {
             color: #0f62fe;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .content {
-            margin-bottom: 20px;
-        }
-        .course-details {
-            margin-bottom: 20px;
-        }
-        .course-details h3 {
-            font-size: 1.2em;
-        }
-        .badge-link {
-            text-decoration: none;
-            color: #007acc;
-        }
-        .badge-link:hover {
-            text-decoration: underline;
         }
         .footer {
             text-align: center;
@@ -67,6 +54,8 @@
             background-color: #333;
             color: #fff;
             width: 100%;
+            position: relative;
+            bottom: 0;
         }
         .sidebar-left ul, .sidebar-right ul {
             list-style-type: none;
@@ -77,10 +66,13 @@
         }
         .sidebar-left ul li a, .sidebar-right ul li a {
             text-decoration: none;
-            color: #0f62fe;
+            color: white;
         }
         .sidebar-left ul li a:hover, .sidebar-right ul li a:hover {
             text-decoration: underline;
+        }
+        .sidebar-right ul li a {
+            color: #0f62fe;
         }
     </style>
 </head>
@@ -100,26 +92,38 @@
         </div>
         <div class="sidebar-right">
             <h2>Additional Resources</h2>
-            <div class="course-details">
-                <h3>IBM z/OS Bootcamp</h3>
-                <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-zos-bootcamp-ESZ0G">View Course</a></p>
-            </div>
-            <div class="course-details">
-                <h3>Fundamental System Skills in z/OS</h3>
-                <p><a class="badge-link" href="https://www.ibm.com/training/course/fundamental-system-skills-in-zos-ES10G">View Course</a></p>
-            </div>
-            <div class="course-details">
-                <h3>IBM System z HMC Operations</h3>
-                <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-system-z-hardware-management-console-hmc-operations-ES24G">View Course</a></p>
-            </div>
-            <div class="course-details">
-                <h3>HCD for z/OS</h3>
-                <p><a class="badge-link" href="https://www.ibm.com/training/course/hardware-configuration-and-definition-hcd-for-z-os-ES96G">View Course</a></p>
-            </div>
-            <div class="course-details">
-                <h3>Introduction to Storage</h3>
-                <p><a class="badge-link" href="https://www.ibm.com/training/course/introduction-to-storage-SS01G">View Course</a></p>
-            </div>
+            <ul>
+                <li>
+                    <div class="course-details">
+                        <h3>IBM z/OS Bootcamp</h3>
+                        <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-zos-bootcamp-ESZ0G">View Course</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="course-details">
+                        <h3>Fundamental System Skills in z/OS</h3>
+                        <p><a class="badge-link" href="https://www.ibm.com/training/course/fundamental-system-skills-in-zos-ES10G">View Course</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="course-details">
+                        <h3>IBM System z HMC Operations</h3>
+                        <p><a class="badge-link" href="https://www.ibm.com/training/course/ibm-system-z-hardware-management-console-hmc-operations-ES24G">View Course</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="course-details">
+                        <h3>HCD for z/OS</h3>
+                        <p><a class="badge-link" href="https://www.ibm.com/training/course/hardware-configuration-and-definition-hcd-for-z-os-ES96G">View Course</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="course-details">
+                        <h3>Introduction to Storage</h3>
+                        <p><a class="badge-link" href="https://www.ibm.com/training/course/introduction-to-storage-SS01G">View Course</a></p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="footer">
