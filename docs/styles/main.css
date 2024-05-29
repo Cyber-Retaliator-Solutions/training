@@ -16,7 +16,15 @@ html, body {
     min-height: 100vh;
 }
 
-
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    position: fixed;
+    top: 5rem; /* Adjust according to the height of the navbar */
+    height: calc(100vh - 5rem);
+    overflow: auto;
+}
 .left-sidebar {
     left: 0;
 }
